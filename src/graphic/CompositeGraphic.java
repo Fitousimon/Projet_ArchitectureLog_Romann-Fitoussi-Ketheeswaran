@@ -57,6 +57,9 @@ public class CompositeGraphic implements Graphic {
 	@Override
 	public void print() {
 		// TODO Auto-generated method stub
+		for (Graphic g : this.composite) {
+			g.print();
+		}
 
 	}
 
