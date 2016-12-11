@@ -1,6 +1,5 @@
 package graph;
 
-import graphic.Graphic;
 
 import java.util.ArrayList;
 import java.util.List;
