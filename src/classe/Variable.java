@@ -1,5 +1,10 @@
 package classe;
 
+/**
+ * Classe representant une variable d'instance
+ *
+ */
+
 public class Variable extends ObjetClasse {
 
 	public Variable(String typeVariable, String nom) {
@@ -7,7 +12,7 @@ public class Variable extends ObjetClasse {
 	}
 
 	public void display() {
-		System.out.println("VARIABLE : " + "\nType : " + this.getTypeVariable()
-				+ "\nNom : " + this.getNom());
+		System.out.println("VARIABLE : " + this.getTypeVariable() + " "
+				+ this.getNom());
 	}
 }

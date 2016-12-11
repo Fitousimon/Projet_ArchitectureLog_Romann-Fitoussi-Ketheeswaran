@@ -5,7 +5,11 @@ import java.util.List;
 
 import classe.Methode;
 import classe.Variable;
-import relations.IRelation;
+
+/**
+ * 
+ * Classe representant le type classe
+ */
 
 public class Classe extends Type implements IType {
 
@@ -15,13 +19,16 @@ public class Classe extends Type implements IType {
 		super();
 		listeVariable = new ArrayList<>();
 		listeMethode = new ArrayList<>();
+		this.type = "Classe";
+
 		// TODO Auto-generated constructor stub
 	}
 
-	public Classe(int e, String c, List<IRelation> lr, List<Variable> lv,
+	public Classe(int e, String c, String nom, List<Variable> lv,
 			List<Methode> lm) {
-		super(e, c, lr, lm);
+		super(e, c, nom, lm);
 		this.listeVariable = lv;
+		this.type = "Classe";
 		// TODO Auto-generated constructor stub
 	}
 
@@ -35,7 +42,18 @@ public class Classe extends Type implements IType {
 
 	@Override
 	public void display() {
-		// TODO Auto-generated method stub
+		System.out.println("--------------------------------------------------"
+				+ "\nCLASSE : " + this.getNom()
+				+ "\n--------------------------------------------------");
+
+		for (Variable v : this.getListeVariable()) {
+			v.display();
+			System.out.println("");
+		}
+		for (Methode m : this.getListeMethode()) {
+			m.display();
+			System.out.println("");
+		}
 
 	}
 

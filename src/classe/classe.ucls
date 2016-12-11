@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="classe.ObjetClasse" project="Projet_ArchitectureLogiciel" 
     file="/Projet_ArchitectureLogiciel/src/classe/ObjetClasse.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="462" y="161"/>    
+    <position height="189" width="162" x="182" y="69"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="classe.Methode" project="Projet_ArchitectureLogiciel" 
     file="/Projet_ArchitectureLogiciel/src/classe/Methode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="205" x="180" y="389"/>    
+    <position height="117" width="205" x="-14" y="298"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="classe.Variable" project="Projet_ArchitectureLogiciel" 
     file="/Projet_ArchitectureLogiciel/src/classe/Variable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="623" y="441"/>    
+    <position height="99" width="132" x="212" y="455"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -32,18 +32,19 @@
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="5">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <association id="6">    
+  <association id="5">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="7" name="arguments"/>      
-      <multiplicity id="8" minimum="0" maximum="2147483647"/>    
+      <attribute id="6" name="arguments"/>      
+      <multiplicity id="7" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <generalization id="8">    
+    <bendpoint x="221" y="298"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

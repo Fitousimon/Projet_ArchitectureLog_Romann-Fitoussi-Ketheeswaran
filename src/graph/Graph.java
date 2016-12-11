@@ -1,5 +1,10 @@
 package graph;
 
+/**
+ * 
+ * Superclasse representant un element graphique (type ou relation)
+ *
+ */
 public class Graph {
 
 	int epaisseurTrait;

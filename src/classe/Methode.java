@@ -1,9 +1,20 @@
 package classe;
 
+import java.util.ArrayList;
+
+/**
+ * Classe representant une methode d'une classe
+ */
 import java.util.List;
 
 public class Methode extends ObjetClasse {
 	List<Variable> arguments;
+
+	public Methode(String type, String nom) {
+		super(type, nom);
+		this.arguments = new ArrayList<>();
+		// TODO Auto-generated constructor stub
+	}
 
 	public Methode(String type, String nom, List<Variable> arg) {
 		super(type, nom);
@@ -11,12 +22,18 @@ public class Methode extends ObjetClasse {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * Ecrit la methode dans la console
+	 */
 	public void display() {
-		System.out.println("METHODE : " + "\nType : " + this.getTypeVariable()
-				+ "\nNom : " + this.getNom() + "\nListe Arguments : ");
+		System.out.print("METHODE : " + this.getTypeVariable() + " "
+				+ this.getNom() + "(");
+
 		for (Variable v : arguments) {
-			v.display();
+			System.out.print(v.getTypeVariable() + " " + v.getNom() + ",");
 		}
+		System.out.print(")");
+
 	}
 
 }

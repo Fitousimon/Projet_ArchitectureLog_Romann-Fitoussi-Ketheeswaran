@@ -1,11 +1,19 @@
 package relations;
 
+import graph.IGraph;
 import types.Type;
 
-public class Implements extends Relation implements IRelation {
+/**
+ * 
+ * Relation implements
+ *
+ */
+
+public class Implements extends Relation implements IGraph {
 
 	public Implements(String couleur, int epaisseur, Type debut, Type fin) {
 		super(couleur, epaisseur, debut, fin);
+		this.relation = "IMPLEMENTS";
 		// TODO Auto-generated constructor stub
 	}
 
@@ -13,13 +21,4 @@ public class Implements extends Relation implements IRelation {
 		super();
 	}
 
-	@Override
-	public void display() {
-		System.out.println("--------------------------------------------------"
-				+ "\nRELATION : IMPLEMENTS\n"
-				+ "--------------------------------------------------"
-				+ "\nCouleur : " + this.getCouleur() + "\nEpaisseur : "
-				+ this.getEpaisseurTrait() + "\nType début : "
-				+ this.debut.getNom() + "\nType fin : " + this.fin.getNom());
-	}
 }

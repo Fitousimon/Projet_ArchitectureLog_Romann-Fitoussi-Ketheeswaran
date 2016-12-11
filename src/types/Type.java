@@ -6,26 +6,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 import classe.Methode;
-import relations.IRelation;
+
+/**
+ * 
+ * Superclasse representant un type (interface ou classe)
+ *
+ */
 
 public class Type extends Graph {
-
+	String type;
 	String nom;
-	List<IRelation> listeRelations;
 	List<Methode> listeMethode;
 
 	public Type() {
 		super();
-		this.listeRelations = new ArrayList<>();
 		this.listeMethode = new ArrayList<>();
+		this.nom = "";
 
 		// TODO Auto-generated constructor stub
 	}
 
-	public Type(int e, String c, List<IRelation> l, List<Methode> lm) {
+	public Type(int e, String c, String nom, List<Methode> lm) {
 		super(e, c);
-		this.listeRelations = l;
 		this.listeMethode = lm;
+		this.nom = nom;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -34,15 +38,7 @@ public class Type extends Graph {
 	}
 
 	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public List<IRelation> getListeRelations() {
-		return listeRelations;
-	}
-
-	public void setListeRelations(List<IRelation> listeRelations) {
-		this.listeRelations = listeRelations;
+		this.type = nom;
 	}
 
 	public List<Methode> getListeMethode() {
@@ -52,7 +48,13 @@ public class Type extends Graph {
 	public void setListeMethode(List<Methode> listeMethode) {
 		this.listeMethode = listeMethode;
 	}
-	
-	
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
 
 }

@@ -3,8 +3,15 @@ package relations;
 import graph.Graph;
 import types.Type;
 
+/**
+ * 
+ * Superclasse definissant une relation (heritage ou implementation)
+ *
+ */
+
 public class Relation extends Graph {
 
+	String relation;
 	Type debut;
 	Type fin;
 
@@ -12,6 +19,7 @@ public class Relation extends Graph {
 		super(epaisseur, couleur);
 		this.debut = debut;
 		this.fin = fin;
+
 	}
 
 	public Relation() {
@@ -26,6 +34,19 @@ public class Relation extends Graph {
 
 	public Type getFin() {
 		return this.fin;
+	}
+
+	/**
+	 * Affiche la relation sous format texte
+	 */
+	public void display() {
+		System.out.println("--------------------------------------------------"
+				+ "\nRELATION : " + this.relation + "\n"
+				+ "--------------------------------------------------"
+				+ "\nCouleur : " + this.getCouleur() + "\nEpaisseur : "
+				+ this.getEpaisseurTrait() + "\nType début : "
+				+ this.debut.getNom() + "\nType fin : " + this.fin.getNom());
+		System.out.println("");
 	}
 
 }

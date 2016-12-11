@@ -1,5 +1,12 @@
 package classe;
 
+/**
+ * 
+ * Superclasse representant une methode ou unbe variable d'instance
+ * 
+ *
+ */
+
 public class ObjetClasse {
 
 	String nom;
