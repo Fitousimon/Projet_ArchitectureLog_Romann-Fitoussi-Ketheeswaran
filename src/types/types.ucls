@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="types.IType" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/types/IType.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="103" x="114" y="763"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" language="java" name="types.Interface" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/types/Interface.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="91" x="48" y="552"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="types.Classe" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/types/Classe.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="325" x="179" y="552"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="types.Type" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/types/Type.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="244" x="114" y="251"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="graph.IGraph" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/graph/IGraph.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="616" y="786"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="graph.Graph" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/graph/Graph.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="252" y="87"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="classe.ObjetClasse" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/classe/ObjetClasse.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="894" y="444"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="classe.Methode" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/classe/Methode.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="543" y="405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="classe.Variable" project="Projet_ArchitectureLogiciel" 
+    file="/Projet_ArchitectureLogiciel/src/classe/Variable.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="630" y="579"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="11">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="13">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="14" name="arguments"/>      
+      <multiplicity id="15" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="16">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <generalization id="17">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <generalization id="18">    
+    <bendpoint x="680" y="604"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <association id="19">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="20" name="listeVariable"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <realization id="23">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="24">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="25" name="listeMethode"/>      
+      <multiplicity id="26" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
