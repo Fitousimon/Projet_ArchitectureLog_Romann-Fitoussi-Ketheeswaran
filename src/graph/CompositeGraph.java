@@ -44,7 +44,11 @@ public class CompositeGraph implements IGraph {
 		this.composite.remove(index);
 	}
 
-	
+	/**
+	 * 
+	 * Imprime tous les Graph contenus dans le CompositeGraph
+	 * 
+	 */
 
 	@Override
 	public void display() {
